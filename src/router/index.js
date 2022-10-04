@@ -19,18 +19,29 @@ export default new Router({
     {
       path: '/',
       // name: 'home',
-      components:{
+      components: {
+        default: login
+      }
+      // components:{
+      //   header: header,
+      //   default: home,
+      //   footer: footer
+      // }
+    },
+    {
+      path: '/home',
+      components: {
         header: header,
-        default: home,
-        footer: footer
+         default: home,
+         footer: footer
       }
     },
     {
       path: '/login',
       components: {
-        header: header,
-        default: login,
-        footer: footer
+        // header: header,
+        default: login
+        // footer: footer
       }
     },
     {
